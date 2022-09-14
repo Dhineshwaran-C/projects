@@ -1,0 +1,160 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.p {
+  font-size: 17px;
+}
+.header {
+  background-image: url(../images/background-wallpaper.jpg);
+  height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+.logo {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.header-text h1 {
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 45px;
+}
+.header-text p {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #b5b5b5;
+  font-family: "Raleway", sans-serif;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #129cf3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: #b5b5b5;
+}
+.navbar-brand {
+  padding: 9px 15px;
+}
+.navbar-brand img {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #129cf3;
+}
+.button {
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: yellow;
+  font-size: 20px;
+  color: yellow;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.button:hover {
+  background-color: red;
+  border-color: white;
+  color:white;
+}
+.network-card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.title-card {
+  padding-top: 30px;
+}
+.network {
+  background-image: url(../images/counter-bg.jpg);
+  background-attachment: fixed;    
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+.network h1 {
+  color: white;
+}
+
+.backimg {
+  background-image: url(../images/header-bg.jpg);
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+#countdown {
+  font-size: 500px;
+}
+
+.backimg2 {
+  background-image: url(../images/testimonial-bg.jpg);
+  height: 1500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  line-height: 1500px;
+  text-align: center;
+}
+
+#countdown2 {
+  font-size: 1000px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-bg-change {
+  background-color: gray;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  
+}
+
+#btn-click2 {
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: yellow;
+  font-size: 25px;
+  color: yellow;
+  text-transform: uppercase;
+  transition: all 1s;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+
+}
