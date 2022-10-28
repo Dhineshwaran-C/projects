@@ -11,7 +11,7 @@
 
 .sidebar-header {
     height: 50px;
-    padding: 5px 05px 10px;
+    padding: 5px 0.5px 10px;
     background-color: #ededed;
     display: flex;
     align-items: center;
@@ -36,4 +36,54 @@
 
 .sidebar-header-btn > .MuiSvgIcon-root {
     font-size: 23px;
+}
+
+.sidebar-header-name {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.user-name {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.sidebar-search {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+.sidebar-search-input{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.sidebar-search-input > .MuiSvgIcon-root{
+    font-size: 18px;
+    color: #acacac;
+    margin-left: 10px;
+}
+
+.sidebar-search-input > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    width: 80%;
+}
+
+.sidebar-chat-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y : scroll;
 }
