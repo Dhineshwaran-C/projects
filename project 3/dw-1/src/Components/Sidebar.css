@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Monomaniac one;
+    src: url(monomaniac-one-regular.ttf);
+}
 .sidebar {
     min-width: 300px;
     width: 30%;
@@ -6,6 +10,14 @@
     flex-direction: column;
     position: relative;
     background-color: #474747;
+}
+
+.heading {
+    font-size: 18px;
+    margin-right: 60%;
+    margin-top: 10px;
+    color: #B6B6B6;
+    font-family: Monomaniac One;
 }
 
 .sidebar-header {
@@ -48,14 +60,16 @@
 .user-name {
     text-transform: capitalize;
     font-size: 15px;
+    font-family: roboto;
 }
 
 .sidebar-search {
-    height: 60px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #474747;
+    margin-bottom: 15px;
 }
 .sidebar-search-input{
     width: 90%;
@@ -112,3 +126,4 @@
 ::-webkit-scrollbar-thumb {
     background-color: gray;
 }
+

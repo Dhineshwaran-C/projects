@@ -8,7 +8,7 @@ import UserProfile from './UserProfile';
 function Sidebar() {
   return (
     <div className='sidebar'>
-        
+        <div className='heading'><p>DIRECT MESSAGE</p></div>
         <div className='sidebar-search'>
           <div className='sidebar-search-input'>
             <SearchIcon />
