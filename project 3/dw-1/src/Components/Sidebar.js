@@ -36,7 +36,7 @@ function Sidebar() {
                 <img src='./user.png' alt='' />
             </div>
             <div className='sidebar-header-name'>
-              <p className='user-name'>Name</p>
+              <p className='user-name'>Dhinesh</p>
             </div>
             <div className='sidebar-header-btn'>
                 <TollIcon />
