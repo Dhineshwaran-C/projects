@@ -47,3 +47,63 @@
     background-color: #767676;
     border-radius: 25px 25px 0px 0px;
 }
+
+.chat-input{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: gray;
+    position: relative;
+}
+
+.chat-input-btn{
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.chat-input-btn > .MuiSvgIcon-root {
+    font-size: 26px;
+    color: white;
+    opacity: 70%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.chat-input > form {
+    flex: 1;
+}
+
+.chat-input > form > input{
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 97%;
+    margin-right: 10px;
+    color: white;
+    background-color: darkgrey;
+}
+
+.chat-input-send-btn{
+    width: 45px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.chat-input-send-btn > .MuiSvgIcon-root{
+    font-size: 22px;
+} 
+
+::placeholder{
+    color:#FFFFFF;
+    opacity: 50%;
+}
+
+.emoji-picker-react {
+    position: absolute !important;
+    top: -325px;
+}

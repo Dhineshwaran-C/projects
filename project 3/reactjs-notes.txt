@@ -20,3 +20,6 @@ npm install @mui/material == It setup the ui library for the project
 npm install @mui/icons-material == For icons in ui
 
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react == For icons in ui
+
+
+npm install emoji-picker-react == For emoji

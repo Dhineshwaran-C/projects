@@ -10,6 +10,7 @@
     background-color: #565656;
     border-radius: 10px;
     height: fit-content;
+    align-items: baseline;
 }
 
 .chat-message-text{
@@ -17,6 +18,7 @@
     font-size: 13px;
     margin-bottom: 10px;
     color:white;
+    font-family: roboto;
 }
 
 .chat-message-date {
@@ -24,4 +26,10 @@
     color: lightgray;
     font-weight: normal;
     align-self: flex-end;
+    font-family: roboto;
+}
+
+.picker {
+    position: absolute !important;
+    top: -460px;
 }
