@@ -37,6 +37,10 @@ function Chatcontainer() {
           <ChatMessage message='Hi' time='2.55 PM' />
           <ChatMessage message='Hi' time='2.55 PM' />
           <ChatMessage message='Hi' time='2.55 PM' />
+          <ChatMessage message='Hi' time='2.55 PM' />
+          <ChatMessage message='Hi' time='2.55 PM' />
+          <ChatMessage message='Hi' time='2.55 PM' />
+          <ChatMessage message='Hi' time='2.55 PM' />
         </div>
 
         <div className='chat-input'>

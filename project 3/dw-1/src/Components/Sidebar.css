@@ -125,5 +125,7 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: gray;
+    -webkit-box-shadow: 0 0 2px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
