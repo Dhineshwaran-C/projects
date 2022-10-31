@@ -1,14 +1,16 @@
 import React from 'react'
 import Chatcontainer from './Chatcontainer'
-import Home from './Home'
-
+import Sidebar from './Sidebar'
+import './ChatPage.css'
 function ChatPage() {
   return (
+    <div className='container'>
     <div className='chatpage'>
       <div className='chatpage-container'>
-      <Home />
+        <Sidebar />
       <Chatcontainer />
       </div>
+    </div>
     </div>
   )
 }
