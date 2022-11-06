@@ -5,7 +5,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 import "./Sidebar.css"
 import UserProfile from './UserProfile';
-function Sidebar() {
+function Sidebar({currentUser,signOut}) {
   return (
     <div className='sidebar'>
         <div className='heading'><p>DIRECT MESSAGE</p></div>
@@ -19,24 +19,13 @@ function Sidebar() {
           <UserProfile name='Dhinesh' photoURL='./user.png'/>
           <UserProfile name='Shyam' photoURL='./user.png'/>
           <UserProfile name='Bhuvanesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
-          <UserProfile name='Dhinesh' photoURL='./user.png'/>
         </div>
         <div className='sidebar-header'>
-            <div className='sidebar-header-img'>
-                <img src='./user.png' alt='' />
+            <div className='sidebar-header-img' onClick={signOut}>
+                <img src={currentUser?.photoURL} alt='' />
             </div>
             <div className='sidebar-header-name'>
-              <p className='user-name'>Dhinesh</p>
+              <p className='user-name'>{currentUser?.fullname}</p>
             </div>
             <div className='sidebar-header-btn'>
                 <TollIcon />

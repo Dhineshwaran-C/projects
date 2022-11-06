@@ -23,3 +23,5 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react == 
 
 
 npm install emoji-picker-react == For emoji
+
+npm i firebase@8 == Install firebase
