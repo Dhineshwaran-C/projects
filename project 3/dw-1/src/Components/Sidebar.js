@@ -10,6 +10,8 @@ function Sidebar({currentUser,signOut}) {
 
   const [allUsers,setAllUsers] = useState([])
   const [searchInput, setSearchInput] = useState('');
+  const [friendList,setFriendList] = useState([]);
+
   useEffect(() => {
     const getAllUsers = async () => {
       const data = await db.collection('users').onSnapshot(snapshot => {
@@ -17,7 +19,14 @@ function Sidebar({currentUser,signOut}) {
       });
     };
 
+    const getFriends = async () => {
+      const data = await db.collection('Friendlist').doc(currentUser.email).collection('list').onSnapshot((snapshot) => {
+        setFriendList(snapshot.docs);
+      })
+    };
+
     getAllUsers();
+    getFriends();
   },[]);
 
   const searchedUser = allUsers.filter((user) => {
@@ -45,7 +54,7 @@ function Sidebar({currentUser,signOut}) {
         </div>
         <div className='sidebar-chat-list'>
           {
-            searchItem.length > 0 ? searchItem : (<UserProfile name='Dhinesh' photoURL='./user.png'/>)
+            searchItem.length > 0 ? searchItem : (friendList.map((friend) => <UserProfile name={friend.data().fullname} photoURL={friend.data().photoURL} lastMessage={friend.data().lastMessage} email={friend.data().email}/>))
           }
         </div>
         <div className='sidebar-header'>
