@@ -14,7 +14,7 @@ import { useRef } from 'react';
 function Chatcontainer({currentUser}) {
 
   const [message,setMessage] = useState('');
-  const[openEmojiBox,setOpenEmojiBox] = useState(false);
+  const[openEmojiBox,setOpenEmojiBox] = useState(null);
   const { emailID } = useParams();
   const [chatUser,setChatUser] = useState({});
   const chatBox = useRef(null);
@@ -102,9 +102,9 @@ function Chatcontainer({currentUser}) {
 
         <div className='chat-input'>
         {
-            openEmojiBox && <div className='picker'><Picker onEmojiClick={
+            openEmojiBox && <Picker onEmojiClick={
               (event,emojiObject) => setMessage(message + emojiObject.emoji)
-            }/></div>
+            }/>
           }          
           <div className='chat-input-btn'>
             <InsertEmoticonIcon onClick={() => setOpenEmojiBox(!openEmojiBox)} />

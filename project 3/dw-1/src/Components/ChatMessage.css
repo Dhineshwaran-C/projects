@@ -28,8 +28,3 @@
     align-self: flex-end;
     font-family: roboto;
 }
-
-.picker {
-    position: absolute !important;
-    top: -460px;
-}
