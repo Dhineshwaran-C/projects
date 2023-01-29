@@ -1,0 +1,6 @@
+npx create-react-app@latest movietime == Creating the react application
+
+
+npm install -g yarn == To install yarn
+
+yarn add axios firebase styled-components react-icons react-redux @reduxjs/toolkit react-router-dom == To install everything for this website
