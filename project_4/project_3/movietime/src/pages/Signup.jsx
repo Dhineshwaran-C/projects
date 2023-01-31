@@ -45,10 +45,28 @@ function Signup() {
                 <h6>Ready to watch? Enter your email to create or restart membership</h6>
             </div>
             <div className="form">
-                <input type="email" placeholder='Email Address' name='email' value={formValues.email} onChange={(e) => setFormValues({...formValues,[e.target.name]:e.target.value,})}/>
+                <input type="email" placeholder='Email Address' name='email' 
+                value={formValues.email} 
+                onChange=
+                {(e) => 
+                setFormValues({
+                  ...formValues,
+                  [e.target.name]:e.target.value,
+                  })
+                  }
+                  />
+
+
                 {
                   showPassword && (<input type="password" placeholder='Password' name='password' 
-                  value={formValues.password} onChange={(e) => setFormValues({...formValues,[e.target.name]:e.target.value,})}
+                  value={formValues.password} 
+                  onChange=
+                  {(e) => 
+                    setFormValues({
+                      ...formValues,
+                      [e.target.name]:e.target.value,
+                    })
+                  }
                   />)
                 }
                 
