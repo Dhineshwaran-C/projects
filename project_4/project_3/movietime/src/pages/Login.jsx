@@ -63,7 +63,7 @@ function Login() {
                 }
                   />
                 
-               <button onClick={handleLogIn}>Log In</button>
+               <button type='submit' onClick={handleLogIn}>Log In</button>
             </div>
           </div>
         </div>

@@ -74,7 +74,7 @@ function Signup() {
                   !showPassword && <button onClick={() => setShowPassword(true)}>Get Started</button>
                 }
             </div>
-            <button onClick={handleSignIn}>Sign Up</button>
+            <button type='submit' onClick={handleSignIn}>Sign Up</button>
         </div>
         </div>
     </Conatiner>
