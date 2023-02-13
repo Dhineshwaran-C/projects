@@ -6,7 +6,8 @@ import { FaPowerOff, FaSearch } from 'react-icons/fa'
 import { onAuthStateChanged, signOut } from 'firebase/auth'
 import { firebaseAuth } from '../utils/firebase-config'
 
-function Navbar(isScrolled) {
+function Navbar({isScrolled}) {
+    
 
     const navigate = useNavigate();
 
@@ -26,16 +27,18 @@ function Navbar(isScrolled) {
 
   return (
     <Container>
-        <nav className={`flex ${isScrolled ? "scrolled":""}`}>
+        <nav className={`${isScrolled ? "scrolled" : ""} flex`}>
             <div className="left flex a-center">
-                <div className="brand flex a-center j-centrer">
-                    <img src={logo} alt="logo" />
+                <div className="brand flex a-center j-center">
+                    <img src={logo} alt="Logo" />
                 </div>
                 <ul className="links flex">
                     {links.map(({name,link}) => {
                         return (
-                            <li key={name}><Link to={link}>{name}</Link></li>
-                        )
+                            <li key={name}>
+                                <Link to={link}>{name}</Link>
+                                </li>
+                        );
                     })}
                 </ul>
             </div>
@@ -43,7 +46,7 @@ function Navbar(isScrolled) {
                 <div className={`search ${showSearch ? "show-search":""}`}>
                     <button onFocus={() => setShowSearch(true)} onBlur={
                         () => {
-                            if(!inputHover) setShowSearch(false);
+                            if(!inputHover) {setShowSearch(false);}
                         }
                     }>
                         <FaSearch />
@@ -75,13 +78,16 @@ const Container = styled.div`
     background-color: black;
 }
 nav {
-    position:sticky;
-    height:6.5rem;
+    position: sticky;
+    top: 0;
+    height: 6.5rem;
     width: 100%;
-    justify-content:space-between;
-    z-index:2;
-    padding:0 4rem;
-    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 0 4rem;
+    align-items: center;
     transition: 0.3s ease-in-out;
     .left{
         gap: 2rem;
@@ -122,23 +128,28 @@ nav {
             align-items:center;
             justify-content:center;
             padding:0.2rem;
-            padding-left:0.rem;
+            padding-left:0.5rem;
             button{
                 background-color:transparent;
+                border: none;
+                &:focus {
+                  outline: none;
+                }
                 svg{
                     color:white;
+                    font-size:1.2rem;
                 }
             }
             input{
-                width:0;
-                opacity:0;
-                visibility:hidden;
-                transition:0.3s ease-in-out;
-                background-color:transparent;
-                border:none;
-                color:white;
-                &:focus{
-                    outline:none;
+                width: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+                background-color: transparent;
+                border: none;
+                color: white;
+                &:focus {
+                  outline: none;
                 }
             }
         }
